@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 
 export default class MessageInput extends Component {
-
     constructor(props) {
         super(props);
 

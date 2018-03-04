@@ -1,13 +1,13 @@
 import {createStore, combineReducers} from 'redux';
 
-import user from './reducers/user';
+import userInfo from './reducers/userInfo';
 import nickname from './reducers/nickname';
 import chat from './reducers/chat';
 
 const rootReducer = combineReducers({
-    user,
+    userInfo,
     nickname,
-    chat
+    chat,
 });
 
 const REDUX_DEVTOOLS = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();

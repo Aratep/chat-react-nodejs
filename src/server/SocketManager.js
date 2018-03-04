@@ -21,9 +21,9 @@ module.exports = function (socket) {
     socket.on(VERIFY_USER, (nickname, callback) => {
         // console.log(Date.now())
         if (isUser(connectedUsers, nickname)) {
-            callback({isUser: true, user: null, loginDate: null})
+            callback({isUser: true, user: null})
         } else {
-            callback({isUser: false, user: createUser({name: nickname}), loginDate: Date.now()})
+            callback({isUser: false, user: createUser({name: nickname})})
         }
     })
 

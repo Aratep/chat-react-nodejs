@@ -13,7 +13,7 @@ class LoginForm extends Component {
         };
     }
 
-    setUser = ({user, isUser, loginDate}) => {
+    setUser = ({user, isUser}) => {
 
         if (isUser) {
             this.setError("User name taken")
@@ -41,14 +41,14 @@ class LoginForm extends Component {
     render() {
         const { error} = this.state;
         const {nickname} = this.props.nickname;
-        console.log(this.props)
+        // console.log(this.props)
 
         return (
             <div className="login">
                 <form onSubmit={this.handleSubmit} className="login-form">
 
                     <label htmlFor="nickname">
-                        <h2>Enter Your nickname</h2>
+                        <h2>Enter Your Nickname</h2>
                     </label>
                     <input
                         ref={(input) => {
@@ -58,7 +58,7 @@ class LoginForm extends Component {
                         id="nickname"
                         value={nickname}
                         onChange={this.handleChange}
-                        placeholder={'MY Cool USername'}
+                        placeholder={'MY Cool Nickname'}
                     />
                     <div className="error">{error ? error : null}</div>
 

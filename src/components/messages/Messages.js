@@ -41,8 +41,6 @@ export default class Messages extends Component {
                         )
                     }
                 </div>
-
-
             </div>
         );
     }
